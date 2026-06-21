@@ -80,7 +80,9 @@
     display:flex;
     align-items:center;
     gap:8px;
+    transition: opacity .15s ease;
   }
+  .brand:hover{ opacity: 0.75; }
   .brand .dot{
     width:8px; height:8px; border-radius:50%;
     background: var(--accent);
@@ -460,11 +462,11 @@
   }
 </style>
 </head>
-<body>
+<body id="top">
 
 <header class="nav">
   <div class="nav-inner">
-    <div class="brand"><span class="dot"></span>Yadukrishna&nbsp;KP</div>
+    <a href="#top" class="brand"><span class="dot"></span>Yadukrishna&nbsp;KP</a>
     <nav class="links">
       <a href="#skills">skills</a>
       <a href="#experience">experience</a>
@@ -670,6 +672,7 @@
     <h2 class="section-title reveal">Get in touch</h2>
 
     <div class="card contact-card reveal">
+      <div class="resp-line">HTTP/1.1 200 OK</div>
       <div class="header-row">
         <span class="hkey">Content-Type:</span> text/human
       </div>
